@@ -28,22 +28,25 @@
       <div class="collapse navbar-collapse" id="navbars">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#about me">Home<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About Me</a>
+            <a class="nav-link" href="#about me">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
           </li>
 <!--          <li class="nav-item">
             <a class="nav-link disabled" href="#">Disabled</a>
           </li>-->
-          <li class="nav-item dropdown">
+<!--          <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Projects</a>
             <div class="dropdown-menu" aria-labelledby="dropdown01">
-              <a class="dropdown-item" href="#">Name of project</a>
+              <a class="dropdown-item" href="projects">Name of project</a>
               <a class="dropdown-item" href="#">Name of project</a>
               <a class="dropdown-item" href="#">Name of project</a>
             </div>
-          </li>
+          </li>-->
         </ul>
 <!--        <form class="form-inline my-2 my-lg-0">
           <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
@@ -54,39 +57,63 @@
 
     <main role="main">
 
-      <!-- Main jumbotron for a primary marketing message or call to action -->
-      <div class="jumbotron">
+      <div class="jumbotron" id="about me">
         <div class="container">
-          <h1 class="display-3">Hello, world!</h1>
-          <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-          <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+            <div class="row">
+                <div class="col-md-6">
+                  <img src="https://s26.postimg.org/7lbee5gyx/jay.jpg" class="rounded-circle" alt="Jay West">
+                </div>
+                <div class="col-md-6">
+                    <p>Intro goes here</p>
+                </div>
+            </div>
         </div>
-      </div>
+      </div><!--jumbotron-->
 
-      <div class="container">
-        <!-- Example row of columns -->
-        <div class="row">
-          <div class="col-md-4">
-            <h2>Heading</h2>
-            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-          </div>
-          <div class="col-md-4">
-            <h2>Heading</h2>
-            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-          </div>
-          <div class="col-md-4">
-            <h2>Heading</h2>
-            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-          </div>
-        </div>
-
-        <hr>
-
-      </div> <!-- /container -->
-
+        <div #projects>
+          <div class="container" id="projects">
+            <div class="row">
+              <div class="col-md-4">
+                  <div class="maincontainer">
+                     <div class="card">
+                       <div class="front">
+                       <p>Project one info here</p>
+                      </div>
+                      <div class="back">
+                          <p>Project one idetails</p>
+                      </div>
+                    </div>
+                  </div>
+              </div><!-- /card 1 -->
+                
+               <div class="col-md-4">
+                  <div class="maincontainer">
+                     <div class="card">
+                       <div class="front">
+                       <p>Project two info here</p>
+                      </div>
+                      <div class="back">
+                          <p>Project two idetails</p>
+                      </div>
+                    </div>
+                  </div>
+              </div><!-- /card 2 -->
+                
+              <div class="col-md-4">
+                  <div class="maincontainer">
+                     <div class="card">
+                       <div class="front">
+                       <p>Project three info here</p>
+                      </div>
+                      <div class="back">
+                          <p>Project three idetails</p>
+                      </div>
+                    </div>
+                  </div>
+              </div> <!-- /card 3 -->
+            </div>
+          </div> <!-- /projects container -->
+        </div> 
     </main>
 
     <footer class="container">
