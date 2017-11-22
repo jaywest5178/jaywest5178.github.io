@@ -1,6 +1,21 @@
 /* Move down content because we have a fixed navbar that is 3.5rem tall */
 body {
   padding-top: 3.5rem;
+  background: #343a40;
+  color: blanchedalmond;
+}
+
+.jumbotron{
+  background: #343a40;
+}
+
+h1{
+  color: blanchedalmond;
+}
+
+#projects, #aboutMe{
+  padding-bottom: 100px;
+  padding-top: 200px;
 }
 
 /*card css*/
@@ -9,7 +24,7 @@ body {
     position: relative;
     width: 250px;
     height: 320px;
-    background: green;
+    background: #343a40;
 }
 
 .card{
@@ -35,7 +50,7 @@ body {
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
-    background: #fafafa;
+    background: #ffc728;
     color: #333;
     transform: rotateY(180deg);
 }
