@@ -12,10 +12,16 @@ body {
 h1{
   color: blanchedalmond;
 }
-
-#projects, #aboutMe{
+#welcome{
+  padding-bottom: 130px;
+}
+#aboutMe{
+  padding-top: 50px;
+  padding-bottom: 300px;
+}
+#projects{
+  padding-top: 50px;
   padding-bottom: 100px;
-  padding-top: 200px;
 }
 
 /*card css*/
