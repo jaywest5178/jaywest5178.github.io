@@ -10,170 +10,118 @@
 
     <title>Jason West</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
     <!-- Custom styles for this template -->
-    <link href="css/jumbotron.css" rel="stylesheet">
+    <link href="css/portfolio.css" rel="stylesheet">
     
     <!-- Font Awesome -->
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+      
   </head>
-
   <body>
-
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-      <a class="navbar-brand" href="#">Jason West</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars" aria-controls="navbars" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbars">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#home">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#aboutMe">About Me</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#projects">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contactMe">Contact Me</a>
-          </li>
-<!--          <li class="nav-item">
-            <a class="nav-link disabled" href="#">Disabled</a>
-          </li>-->
-<!--          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Projects</a>
-            <div class="dropdown-menu" aria-labelledby="dropdown01">
-              <a class="dropdown-item" href="projects">Name of project</a>
-              <a class="dropdown-item" href="#">Name of project</a>
-              <a class="dropdown-item" href="#">Name of project</a>
-            </div>
-          </li>-->
-        </ul>
-<!--        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>-->
-      </div>
-    </nav>
-
-    <main role="main">
-
-
-        <div class="jumbotron" id="home">
-        <div class="container" id="welcome">
-            <div class="row">
-                <div class="col-md-6">
-                  <img src="https://s26.postimg.org/7lbee5gyx/jay.jpg" class="rounded-circle" alt="Jay West">
-                </div>
-                <div class="col-md-6">
-                    <h1>Sr. CAFM Data Analyst &amp;</h1>
-                    <h1>Jr. Web Developer</h1>
-                    
-                    <a href="https://www.linkedin.com/in/jasonwest/"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
-                    
-                    <a href="https://twitter.com/_JayWest"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
-                    
-                </div>     
-            </div>
+      
+      <nav class="navbar" style="z-index: 1">
+        <a href="#home">Home</a>
+        <a href="#aboutMe">About Me</a>
+        <a href="#projects">Projects</a>
+        <a href="#contactMe">Contact Me</a>
+      </nav><!--navbar-->
+      <div id="home"></div>
+   
+      <main role="main">
+        <div class="grid-home">
+          <div><img src="https://s26.postimg.org/7lbee5gyx/jay.jpg" alt="Jay West"></div>
+          <div>
+            <h1>Sr. CAFM Data Analyst &amp;</h1>
+            <h1>Jr. Web Developer</h1>
+            <a href="https://www.linkedin.com/in/jasonwest/"><i class="fa fa-linkedin-square fa-2x" style="color: cornflowerblue" aria-hidden="true"></i></a>     
+            <a href="https://twitter.com/_JayWest"><i class="fa fa-twitter-square fa-2x" style="color: cornflowerblue" aria-hidden="true"></i></a>
+          </div>
+        </div><!--home-->
+        
+        <div class="grid-aboutMe" id="aboutMe">
+          <div>
+            <h1>About Me</h1>
+            <p class="p-size"> I am a Computer Aided Facilities Management (CAFM) Data Analyst with over fifteen years’ experience; eager and
+                willing to learn new skills, take on challenges, and complete any education necessary for career growth.
+                I possesses an innate ability to simplify and communicate complex subjects and is a passionate problem solver. For a more detailed look at
+                my professinal career please visit my LinkedIn profile <a href="https://www.linkedin.com/in/jasonwest/">here.</a>
+            </p>
+          </div>
+        </div><!--aboutMe-->
+        
+        <div class="title" id="projects">
+          <h1>My Projects</h1>
+          <h3>Click cards to flip for more information.</h3>
         </div>
-      </div><!--jumbotron-->
-        
-        <div #about me>
-            <div class="container" id="aboutMe">
-                <div class="row">
-                    <div class="col-md-12">
-                    <h1>About Me</h1>
-                    <p>Why is the about me section the hardest...</p><br>
-                    <p>Here it goes. I am a Computer Aided Facilities Management (CAFM) Data Analyst with over 15 years’ experience and a Junior Web Developer with less than 1 year experience. <br><br> I would hate to plagiarize myself so if you would like to know more about my professional background, head over to my <a href="https://www.linkedin.com/in/jasonwest/">LinkedIn profile</a> for more info.</p>
-                    </div>
-
+        <div class="grid-projects" id="projects2">
+          <div class="card1">
+            <div class="flip-container" onclick="this.classList.toggle('hover');">
+              <div class="card">
+                <div class="front">
+                  <p>Project one info here</p>
                 </div>
-            </div>
-        </div>
-        
-        <div #projects>
-          <div class="container" id="projects">
-              <h1>My Projects</h1>              
-            <div class="row">
-              <div class="col-md-4">
-                  <div class="maincontainer">
-                     <div class="card">
-                       <div class="front">
-                       <p>Project one info here</p>
-                      </div>
-                      <div class="back">
-                          <p>Details for project 1 will</p>
-                          <p>eventually go here.</p>
-                      </div>
-                    </div>
-                  </div>
-              </div><!-- /card 1 -->
-                
-               <div class="col-md-4">
-                  <div class="maincontainer">
-                     <div class="card">
-                       <div class="front">
-                       <p>Project two info here</p>
-                      </div>
-                      <div class="back">
-                          <p>Details for project 2 will</p>
-                          <p>eventually go here.</p>
-                      </div>
-                    </div>
-                  </div>
-              </div><!-- /card 2 -->
-                
-              <div class="col-md-4">
-                  <div class="maincontainer">
-                     <div class="card">
-                       <div class="front">
-                       <p>Project three info here</p>
-                      </div>
-                      <div class="back">
-                          <p>Details for project 3 will</p>
-                          <p>eventually go here.</p>
-                      </div>
-                    </div>
-                  </div>
-              </div> <!-- /card 3 -->
-            </div>
-          </div> 
-        </div><!-- /projects --> 
-        
-        <div #contact me>
-            <div class="container" id="contactMe">
-                <h2>Let's get in touch!</h2>
-                <div class="wrapper">
-                    <div class="form">
-                        <form>
-
-                        <p>
-                        <label for="firstName" class="first-name">First Name</label>
-                        <input id="firstName" type="text">
-                        </p>
-
-                        <p>
-                        <label for="lastName" class="last-name">Last Name</label>
-                        <input id="lastName" type="text">
-                        </p>
-
-                        <p>
-                        <label for="email" class="email">email </label>
-                        <input id="email" type="text">
-                        </p>
-
-                        <p class="full-width">
-                        <button>Send</button>
-                        </p>
-                            
-                        </form>
-                    </div>
+                <div class="back">
+                  <p>Details for project 1 will</p>
+                  <p>eventually go here.</p>
                 </div>
+              </div>
+             </div>
+          </div><!-- /card 1 -->
+            
+          <div class="card2">
+            <div class="flip-container" onclick="this.classList.toggle('hover');">
+              <div class="card">
+                <div class="front">
+                  <p>Project two info here</p>                  
+                </div>
+                <div class="back">
+                  <p>Details for project 2 will</p>
+                  <p>eventually go here.</p>
+                </div>
+              </div>
+             </div>
+          </div><!-- /card 2 -->
+            
+          <div class="card3">
+            <div class="flip-container" onclick="this.classList.toggle('hover');">
+              <div class="card">
+                <div class="front">
+                  <p>Project three info here</p>
+                </div>
+                <div class="back">
+                  <p>Details for project 3 will</p>
+                  <p>eventually go here.</p>
+                </div>
+              </div>
+             </div>
+          </div><!-- /card 3 -->
+        </div><!--projects-->
+          
+        <div class="container" id="contactMe">
+            <h1>Let's get in touch!</h1>
+            <div class="wrapper">
+              <div class="form">
+                <form>
+                <p>
+                <label for="firstName" class="first-name">First Name</label>
+                <input id="firstName" type="text">
+                </p>
+
+                <p>
+                <label for="lastName" class="last-name">Last Name</label>
+                <input id="lastName" type="text">
+                </p>
+
+                <p>
+                <label for="email" class="email">email </label>
+                <input id="email" type="text">
+                </p>
+
+                <p class="full-width">
+                <button>Send</button>
+                </p>
+                </form><!-- /form --> 
+              </div>
             </div>
         </div><!-- /contact me --> 
             
@@ -182,13 +130,7 @@
     <footer class="container">
       <p>&copy; MadebyJay 2017</p>
     </footer>
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="https://getbootstrap.com/assets/js/vendor/popper.min.js"></script>
-    <script src="https://getbootstrap.com/dist/js/bootstrap.min.js"></script>
+      
+ 
   </body>
 </html>
