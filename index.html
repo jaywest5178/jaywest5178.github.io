@@ -1,7 +1,6 @@
-
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -15,122 +14,139 @@
     
     <!-- Font Awesome -->
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-      
-  </head>
-  <body>
-      
+</head>
+
+<div class="wrapper">
+    <header class="header">
       <nav class="navbar" style="z-index: 1">
         <a href="#home">Home</a>
         <a href="#aboutMe">About Me</a>
         <a href="#projects">Projects</a>
         <a href="#contactMe">Contact Me</a>
-      </nav><!--navbar-->
-      <div id="home"></div>
-   
-      <main role="main">
-        <div class="grid-home">
-          <div><img src="https://s26.postimg.org/7lbee5gyx/jay.jpg" alt="Jay West"></div>
-          <div>
+      </nav><!--/navbar-->
+    </header><!--/header-->
+    
+    <main role="main">
+    <div class="home-grid" id="home">
+        <div class="myPic"><img class="myPic" src="https://s26.postimg.org/7lbee5gyx/jay.jpg" alt="Jay West" border=></div>
+        <article class="myIntro">
             <h1>Sr. CAFM Data Analyst &amp;</h1>
             <h1>Jr. Web Developer</h1>
             <a href="https://www.linkedin.com/in/jasonwest/"><i class="fa fa-linkedin-square fa-2x" style="color: cornflowerblue" aria-hidden="true"></i></a>     
             <a href="https://twitter.com/_JayWest"><i class="fa fa-twitter-square fa-2x" style="color: cornflowerblue" aria-hidden="true"></i></a>
-          </div>
-        </div><!--home-->
+        </article><!--/myIntro-->
+    </div><!--/home-->
         
-        <div class="grid-aboutMe" id="aboutMe">
-          <div>
-            <h1>About Me</h1>
-            <p class="p-size"> I am a Computer Aided Facilities Management (CAFM) Data Analyst with over fifteen years’ experience; eager and
-                willing to learn new skills, take on challenges, and complete any education necessary for career growth.
-                I possesses an innate ability to simplify and communicate complex subjects and is a passionate problem solver. For a more detailed look at
-                my professinal career please visit my LinkedIn profile <a href="https://www.linkedin.com/in/jasonwest/">here.</a>
-            </p>
-          </div>
-        </div><!--aboutMe-->
+        <div class="aboutMe-grid" id="aboutMe">
+            <article role="article" class="aboutMeIntro">
+                <h1>About Me</h1>
+                <p> I am a Computer Aided Facilities Management (CAFM) Data Analyst with over fifteen years’ experience; eager and
+                    willing to learn new skills, take on challenges, and complete any education necessary for career growth.
+                    I possesses an innate ability to simplify and communicate complex subjects and is a passionate problem solver. For a more detailed look at
+                    my professinal career please visit my LinkedIn profile <a href="https://www.linkedin.com/in/jasonwest/">here.</a>
+                </p>
+            </article><!--/aboutMeDescription-->
+            <div class="mySkills">
+                <h2 style="color: black">Skills</h2>
+                <div class="skill1"><img src="images/64-64_html5.png" alt="HTML5"></div>
+                <div class="skill2"><img src="images/64-64_css3.png" alt="CSS3"></div>
+                <div class="skill3"><img src="images/64-64_excel.png" alt="Excel"></div>
+                <div class="skill4"><img src="images/PowerBI-Logo.png" alt="PowerBI"></div>
+                <div class="skill5"><img src="images/autocad-logo.png" alt="AutoCAD"></div>  
+            </div><!--/skills-->
+        </div><!--/aboutMe-->
         
-        <div class="title" id="projects">
-          <h1>My Projects</h1>
-          <h3>Click cards to flip for more information.</h3>
-        </div>
-        <div class="grid-projects" id="projects2">
-          <div class="card1">
-            <div class="flip-container" onclick="this.classList.toggle('hover');">
-              <div class="card">
-                <div class="front">
-                  <p>Project one info here</p>
-                </div>
-                <div class="back">
-                  <p>Details for project 1 will</p>
-                  <p>eventually go here.</p>
-                </div>
-              </div>
-             </div>
-          </div><!-- /card 1 -->
-            
-          <div class="card2">
-            <div class="flip-container" onclick="this.classList.toggle('hover');">
-              <div class="card">
-                <div class="front">
-                  <p>Project two info here</p>                  
-                </div>
-                <div class="back">
-                  <p>Details for project 2 will</p>
-                  <p>eventually go here.</p>
-                </div>
-              </div>
-             </div>
-          </div><!-- /card 2 -->
-            
-          <div class="card3">
-            <div class="flip-container" onclick="this.classList.toggle('hover');">
-              <div class="card">
-                <div class="front">
-                  <p>Project three info here</p>
-                </div>
-                <div class="back">
-                  <p>Details for project 3 will</p>
-                  <p>eventually go here.</p>
-                </div>
-              </div>
-             </div>
-          </div><!-- /card 3 -->
-        </div><!--projects-->
-          
-        <div class="container" id="contactMe">
+        <div class="projects-grid" id="projects">
+            <article role="article" class="myProjectsIntro">
+              <h1>My Projects</h1>
+                <p>Project intro here</p>
+            </article><!--/projectsDescription-->
+            <div class="cards">
+                <div class="card1">
+                <div class="flip-container" onclick="this.classList.toggle('hover');">
+                  <div class="card">
+                    <div class="front">
+                      <p>Project one info here</p>
+                    </div>
+                    <div class="back">
+                      <p>Details for project 1 will</p>
+                      <p>eventually go here.</p>
+                    </div>
+                  </div>
+                 </div>
+              </div><!--/card 1-->
+
+              <div class="card2">
+                <div class="flip-container" onclick="this.classList.toggle('hover');">
+                  <div class="card">
+                    <div class="front">
+                      <p>Project one info here</p>
+                    </div>
+                    <div class="back">
+                      <p>Details for project 2 will</p>
+                      <p>eventually go here.</p>
+                    </div>
+                  </div>
+                 </div>
+              </div><!--/card 2-->
+
+              <div class="card3">
+                <div class="flip-container" onclick="this.classList.toggle('hover');">
+                  <div class="card">
+                    <div class="front">
+                      <p>Project one info here</p>
+                    </div>
+                    <div class="back">
+                      <p>Details for project 3 will</p>
+                      <p>eventually go here.</p>
+                    </div>
+                  </div>
+                 </div>
+              </div><!--/card 3-->
+            </div><!--/cards-->
+        </div><!--/projects-->
+        
+        <div class="contact-grid" id="contactMe">
+            <article role="article">
             <h1>Let's get in touch!</h1>
-            <div class="wrapper">
-              <div class="form">
-                <form>
-                <p>
-                <label for="firstName" class="first-name">First Name</label>
-                <input id="firstName" type="text">
-                </p>
+            <p>Form not functional yet. :( Connect with me on LinkeIn to chat.</p>
+            </article><!--/formDescription-->
+            <form role="form">
+                    <div>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="user_name">
+                    </div>
+                    <div>
+                        <label for="mail">E-mail:</label>
+                        <input type="email" id="mail" name="user_mail">
+                    </div>
+                    <div>
+                        <label for="msg">Message:</label>
+                        <textarea id="msg" name="user_message"></textarea>
+                    </div>
+                    <div class="button">
+                        <button type="submit">Send your message</button>
+                    </div>
+            </form><!--/form-->
+        
+        </div>
+        
+    </main><!--/main-->
+    
+    <footer class="footer">&copy; MadebyJay 2017</footer>
 
-                <p>
-                <label for="lastName" class="last-name">Last Name</label>
-                <input id="lastName" type="text">
-                </p>
-
-                <p>
-                <label for="email" class="email">email </label>
-                <input id="email" type="text">
-                </p>
-
-                <p class="full-width">
-                <button>Send</button>
-                </p>
-                </form><!-- /form --> 
-              </div>
-            </div>
-        </div><!-- /contact me --> 
-            
-    </main>
-
-    <footer class="container">
-      <p>&copy; MadebyJay 2017</p>
-    </footer>
-      
- 
-  </body>
+</div><!--/wrapper-->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 </html>

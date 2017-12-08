@@ -1,0 +1,198 @@
+/* Move down content because we have a fixed navbar that is 3.5rem tall */
+body {
+  padding-top: 3.5rem;
+  padding-left: 20px;
+  padding-right: 20px;
+  background: #343a40;
+  color: blanchedalmond;
+}
+
+img{
+    border: 1px solid blanchedalmond;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+/*navbar*/
+.navbar{
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.navbar a{
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.main{
+    margin-top: 30px;
+}
+
+a{
+    color: blanchedalmond;
+}
+
+.p-size{
+    font-size: 20px;
+}
+
+/*grid home set-up*/
+.grid-home{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 600px;
+}
+
+.grid-home>div{
+    text-align: left;
+}
+
+/*grid aboutMe set-up*/
+.grid-aboutMe{
+    display: grid;
+    grid-template-columns: auto;
+}
+.grid-aboutMe>div{
+    text-align: left;
+}
+
+/*grid projects set-up*/
+.grid-projects{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.grid-projects>div{
+    text-align: center;
+    justify-self: center;
+}
+.title{
+    grid-column: 1/3;
+    justify-self: left;
+}
+.card1{
+    grid-column: 1;
+}
+.card2{
+    grid-column: 2;
+}
+.card3{
+    grid-column: 3;
+}
+
+
+h1{
+  color: blanchedalmond;
+}
+#home{
+  padding-top: 50px;
+}
+#aboutMe{
+  padding-top: 50px;
+  padding-bottom: 435px;
+}
+#projects{
+  padding-top: 50px;
+}
+
+#projects2{
+  padding-bottom: 435px;
+}
+
+
+/*form*/
+
+#form-wrapper{
+    max-width: 500px;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    text-align: center;
+}
+
+.contactInfo{
+    margin: auto;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+label{
+    text-align: left;
+}
+
+.footer{
+    text-align: center;
+}
+
+/*form
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    justify-self: center;
+    grid-column: 1/3;
+
+}
+.full-width {
+    grid-column: 1 / 3;   
+}
+*/
+
+/*card*/
+.flip-container{
+    position: relative;
+    perspective: 1000px;
+}
+
+.flip-container.hover .card {
+  transform: rotateY(180deg);
+}
+
+.flip-container,
+.front,
+.back{
+    width: 250px;
+    height: 320px;
+    background: #343a40;
+}
+
+.card{
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 1s ease;
+}
+
+.card,
+.front,
+.back{
+    width: 100%;
+    height: 100%; 
+}
+
+.front,
+.back{
+    position: absolute;
+    backface-visibility: hidden;
+    background: #ffc728;
+    color: #333;
+}
+
+.front{
+    z-index: 2;
+    transform: rotateY(0deg);
+}
+
+.back{
+    transform: rotateY(180deg);
+}
